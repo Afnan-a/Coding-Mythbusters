@@ -1,9 +1,6 @@
 # Software-Devolopment
 Visual studio commands for setup
 
-dart pub get
-flutter pub get
-
 npm i react
 npx create-react-app my-app
 cd ./my-app/
