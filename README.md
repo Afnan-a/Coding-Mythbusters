@@ -1,7 +1,6 @@
 # Software-Devolopment
 Visual studio commands for setup
 
-
 dart pub get
 flutter pub get
 
