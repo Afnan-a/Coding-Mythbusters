@@ -1,18 +1,19 @@
 import React from 'react';
-  
-const Home = () => {
+
+const Lessons = () => {
   return (
     <div
       style={{
         display: 'flex',
-        justifyContent: 'center',
+        justifyContent: 'Top',
         alignItems: 'center',
         height: '100vh'
       }}
     >
-      <h1>Welcome to Ready Set Learn</h1>
+    <h1>Lessons Plans: </h1>
     </div>
+
   );
 };
   
-export default Home;
+export default Lessons;
