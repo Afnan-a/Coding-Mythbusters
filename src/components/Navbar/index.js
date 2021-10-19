@@ -11,17 +11,18 @@ NavBtnLink,
 const Navbar = () => {
 return (
 	<>
-	<Nav>
-		<Bars />
-
+	<Nav bg="dark" variant="dark" >
+	
 		<NavMenu>
+		<Bars/> 
 		<NavLink to='/welcome' activeStyle>
 			Welcome
 		</NavLink>
         <NavLink to='/home' activeStyle>
             Home
-        </NavLink>
+        </NavLink> 
 		</NavMenu>
+		
 	</Nav>
 	</>
 );
