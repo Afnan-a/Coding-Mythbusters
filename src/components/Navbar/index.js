@@ -14,12 +14,8 @@ return (
 	<Nav bg="dark" variant="dark" >
 	
 		<NavMenu>
-		<Bars/> 
-		<NavLink to='/welcome' activeStyle>
-			Welcome
-		</NavLink>
         <NavLink to='/home' activeStyle>
-            Home
+            DashBoard
         </NavLink> 
 		<NavLink to='/lessons' activeStyle>
 			Lessons

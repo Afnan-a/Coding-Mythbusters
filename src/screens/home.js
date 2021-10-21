@@ -24,12 +24,6 @@ const Home = () => {
       >
         <h1>Welcome to Ready Set Learn</h1>
       </div>
-        
-        <div class="d-flex align-items-center">
-          <NavLink to='/lessons' activeStyle>
-        <h2>Lessons Plans</h2>
-        </NavLink>
-        </div>
       
       </div>
    
