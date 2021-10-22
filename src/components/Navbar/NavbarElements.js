@@ -2,8 +2,9 @@ import { FaBars } from 'react-icons/fa';
 import { NavLink as Link } from 'react-router-dom';
 import styled from 'styled-components';
 
+//top light purple box
 export const Nav = styled.nav`
-background: #000000;
+background: #9E768F;
 height: 85px;
 display: flex;
 justify-content: flex;
@@ -13,19 +14,24 @@ z-index: 12;
 /* justify-content: flex-start; */
 `;
 
+//welcome and home
 export const NavLink = styled(Link)`
-color: #fffcfc;
+color: #000000;
+font-weight: bold;
+font-size: 1.5rem;
 display: flex;
+text-align: center;
 align-items: center;
 text-decoration: none;
 padding: 0 1rem;
 height: 100%;
 cursor: pointer;
 &.active {
-	color: #fffcfc;
+	color: #C4C4C4;
 }
 `;
 
+//hamburger menu
 export const Bars = styled(FaBars)`
 display: block;
 color: #fffcfc;
@@ -54,6 +60,7 @@ white-space: 24px;
 
 export const NavBtn = styled.nav`
 display: flex;
+text-align: center;
 align-items: center;
 margin-right: 24px;
 /* Third Nav */
@@ -68,7 +75,7 @@ export const NavBtnLink = styled(Link)`
 border-radius: 4px;
 background: #808080;
 padding: 10px 22px;
-color: #000000;
+color: #9E768F;
 outline: none;
 border: none;
 cursor: pointer;
