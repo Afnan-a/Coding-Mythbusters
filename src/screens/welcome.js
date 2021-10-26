@@ -7,6 +7,7 @@ const Welcome = () => {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
+        textAlign: 'center',
         height: '100vh'
       }}
     >

@@ -1,4 +1,6 @@
 import React from 'react';
+import Logo from '../ReadySetTeach.jpg';
+import User from '../Profile.jpg';
 import {
 Nav,
 NavLink,
@@ -13,19 +15,23 @@ return (
 	<>
 	<Nav bg="dark" variant="dark" >
 	
-		<NavMenu>
+
+		<NavMenu> 
+		<img src={Logo} height="85" alt="logo"/>
+		<NavLink to='/welcome' activeStyle>
+			Welcome
+		</NavLink>
         <NavLink to='/home' activeStyle>
-            DashBoard
-        </NavLink> 
-		<NavLink to='/lessons' activeStyle>
-			Lessons
-		</NavLink>
-		<NavLink to='/calendar' activeStyle>
+            Home
+        </NavLink>
+		<NavLink to='/Calendar' activeStyle>
 			Calendar
-		</NavLink>
-		<NavLink to='/curriculum' activeStyle>
-			Curriculum
-		</NavLink>
+        </NavLink>
+		<NavLink to='/Lesson Plans' activeStyle>
+			Lesson Plans
+        </NavLink>
+		<img src={User} height="85" alt="profile"/>
+
 		</NavMenu>
 		
 	</Nav>
