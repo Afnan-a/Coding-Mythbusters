@@ -26,6 +26,7 @@ const Home = () => {
       >
         <h1>Welcome to Ready Set Teach</h1>
       </div>
+
         
       <div class="d-flex align-items-center">
         <NavLink to='/lessons' activeStyle>
@@ -33,6 +34,7 @@ const Home = () => {
         </NavLink>
        </div>
     
+
       </div>
    
   );

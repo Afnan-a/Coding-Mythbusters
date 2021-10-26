@@ -15,6 +15,7 @@ return (
 	<>
 	<Nav bg="dark" variant="dark" >
 	
+
 		<NavMenu> 
 		<img src={Logo} height="85" alt="logo"/>
 		<NavLink to='/welcome' activeStyle>
@@ -30,6 +31,7 @@ return (
 			Lesson Plans
         </NavLink>
 		<img src={User} height="85" alt="profile"/>
+
 		</NavMenu>
 		
 	</Nav>
