@@ -1,19 +1,19 @@
 import React from 'react';
-  
-const Welcome = () => {
+
+const Curriculum = () => {
   return (
     <div
       style={{
         display: 'flex',
-        justifyContent: 'center',
+        justifyContent: 'Top',
         alignItems: 'center',
-        textAlign: 'center',
         height: '100vh'
       }}
     >
-      <h1>Welcome Back</h1>
+    <h1>Curriculum: </h1>
     </div>
+
   );
 };
   
-export default Welcome;
+export default Curriculum;
