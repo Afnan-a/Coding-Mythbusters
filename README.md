@@ -15,9 +15,9 @@ npm i react-native
 
 
 Github documentation steps
-Git checkout /b branch to add branch name so that you can create the new branch 
+Git checkout -b branchname to add branch name so that you can create the new branch 
 Git status to look at all files that you have edited 
 Git add filename, to add all files that you want to add to the repository 
 Git commit -m, to add message that describes what has been done 
-Git push --set-upstream origin branch name, to add your branch to the main project 
+Git push --set-upstream origin branchname, to add your branch to the main project 
 
