@@ -23,7 +23,7 @@ display: flex;
 text-align: center;
 align-items: center;
 text-decoration: none;
-padding: 0 1rem;
+padding: 0 2rem;
 height: 100%;
 cursor: pointer;
 &.active {
@@ -51,6 +51,7 @@ padding-top: 24px;
 export const NavMenu = styled.div`
 display: fixed;
 align-self: auto;
+margin-left: 23rem; //puts words in middle of screen, moves logo too
  width: 50vw;
 white-space: 24px; 
 @media screen and (max-width: 768px) {
