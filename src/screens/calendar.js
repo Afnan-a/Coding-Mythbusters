@@ -1,5 +1,5 @@
 import React from "react";
-//import Calendar from "@ericz1803/react-google-calendar";
+import Calendar from "@ericz1803/react-google-calendar";
 /*calendar is not working on my end and this goes inbetween div 
  * <Calendar apiKey={API_KEY} calendars={calendars} /> 
  */
@@ -17,7 +17,7 @@ const calendar = () => {
   
     return (
       <div>
-        
+        <Calendar apiKey={API_KEY} calendars={calendars} /> 
       </div>
     )
 }
