@@ -3,7 +3,7 @@ import { FaBars } from 'react-icons/fa';
 import { NavLink as Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-const Home = () => {
+/*const Home = () => {
   return (
    
       <div
@@ -11,7 +11,6 @@ const Home = () => {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-          textAlign: 'center',
           height: '100vh'
         }}
       >
@@ -20,7 +19,6 @@ const Home = () => {
           display: 'auto',
           justifyContent: 'center',
           alignItems: 'center',
-          textAlign: 'center',
           height: '100vh'
         }}
       >
@@ -51,5 +49,14 @@ cursor: pointer;
 &.active {
 	color: #fffcfc;
 }
-`;
+`;*/
+
+function Home () {
+  return (
+    <div className='home'>
+      <h1>Welcome to Ready Set Teach!</h1>
+    </div>
+  );
+}
+
 export default Home;
