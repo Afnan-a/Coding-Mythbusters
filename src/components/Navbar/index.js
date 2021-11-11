@@ -39,8 +39,4 @@ return (
 );
 };
 
-<<<<<<< HEAD
 export default Navbar;
-=======
-export default Navbar;
->>>>>>> main
