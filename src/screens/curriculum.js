@@ -5,7 +5,7 @@ import '@react-pdf-viewer/core/lib/styles/index.css';
 import '@react-pdf-viewer/default-layout/lib/styles/index.css';
 import { Worker } from '@react-pdf-viewer/core';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import storage from './firebase';
+import { store } from './firebase';
 
  
 const Curriculum = () => {
@@ -18,8 +18,8 @@ const Curriculum = () => {
       return;
     
     // sending file to storage
-    storage.ref(`/curriculum/${file.name}`).put(file).on("state_changed", () => {
-      storage.ref("curriculum").child(file.name).getDownloadURL().then((Url) => {
+    store.ref(`/curriculum/${file.name}`).put(file).on("state_changed", () => {
+      store.ref("curriculum").child(file.name).getDownloadURL().then((Url) => {
         setUrl(Url);
       })
     });

@@ -9,10 +9,12 @@ import Curriculum from './screens/curriculum';
 import Settings from './screens/settings';
 import People from './screens/people';
 import Logout from './screens/log_out';
+import Signin from './screens/sign_in';
+import { Container } from 'react-bootstrap'
 
 function App() {
 return (
-	<Router>
+	/*<Router>
 	<Navbar />
 	<Switch>
 		<Route path='/' exact component={Home} />
@@ -23,7 +25,16 @@ return (
 		<Route path='/people' component={People} />
 		<Route path='/log_out' component={Logout} />
 	</Switch>
-	</Router>
+	</Router>*/ 
+	<Container 
+		className="d-flex align-items-center justify-content-center"
+		style={{minHeight: "100vh" }}
+	>
+		<div className="w-100" style={{maxWidth: "400px" }}>
+			<Signin />
+		</div>
+	</Container>
+	
 );
 }
 
