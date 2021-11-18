@@ -37,7 +37,7 @@ const Curriculum = () => {
 
   return(
    // <input type="file" onChange={onChange}/> // onchange handler for this input
-   <div className="Curriculum">
+   <div className="Curriculum" style={{ marginTop:250 }}>
     <center>
       <input type="file" onChange={(e) => { setFile(e.target.files[0]) }} />
       <button onClick={upload}>Upload</button>

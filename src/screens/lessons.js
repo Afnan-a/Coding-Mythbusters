@@ -7,10 +7,11 @@ const Lessons = () => {
         display: 'flex',
         justifyContent: 'Top',
         alignItems: 'center',
-        height: '30vh'
+        height: '20vh'
       }}
     >
-    <h1>Lessons Plans: </h1>
+
+    <h1 style={{ paddingLeft: 700 }}>Lesson Plans:</h1>
     </div>
 
   );

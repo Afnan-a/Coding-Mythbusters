@@ -62,9 +62,11 @@
     width: 100%;
 }
 
+/*The position of the X button to toggle sidebar off is here*/
 .navbar-toggle {
     background-color: #9E768F;
     width: 100%;
+    margin-left: -32px;
     height: 80px;
     display: flex;
     justify-content: start;

@@ -63,7 +63,7 @@ export const NavBtn = styled.nav`
 display: flex;
 text-align: center;
 align-items: center;
-margin-right: 24px;
+margin-right: 40px;
 /* Third Nav */
 /* justify-content: flex-end;
 width: 100vw; */
