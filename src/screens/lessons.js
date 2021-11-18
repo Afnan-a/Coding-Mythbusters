@@ -7,7 +7,7 @@ const Lessons = () => {
         display: 'flex',
         justifyContent: 'Top',
         alignItems: 'center',
-        height: '100vh'
+        height: '30vh'
       }}
     >
     <h1>Lessons Plans: </h1>
