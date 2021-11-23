@@ -12,6 +12,11 @@ npm i react-bootstrap
 npm install react-router-dom
 npm install
 npm i react-native
+npm install firebase@9.0.0
+npm install --save react-firebase-hooks
+npm install bootstrap
+
+
 
 
 Github documentation steps
