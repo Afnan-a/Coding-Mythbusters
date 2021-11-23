@@ -5,7 +5,7 @@ import '@react-pdf-viewer/core/lib/styles/index.css';
 import '@react-pdf-viewer/default-layout/lib/styles/index.css';
 import { Worker } from '@react-pdf-viewer/core';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { store } from './firebase';
+import { storage } from './firebase';
 
  
 const Curriculum = () => {
@@ -18,8 +18,8 @@ const Curriculum = () => {
       return;
     
     // sending file to storage
-    store.ref(`/curriculum/${file.name}`).put(file).on("state_changed", () => {
-      store.ref("curriculum").child(file.name).getDownloadURL().then((Url) => {
+    storage.ref(`/curriculum/${file.name}`).put(file).on("state_changed", () => {
+      storage.ref("curriculum").child(file.name).getDownloadURL().then((Url) => {
         setUrl(Url);
       })
     });
@@ -35,7 +35,7 @@ const Curriculum = () => {
     })
   };*/
 
-  return(
+  /*return(
    // <input type="file" onChange={onChange}/> // onchange handler for this input
    <div className="Curriculum">
     <center>
@@ -46,7 +46,7 @@ const Curriculum = () => {
     </center>
    </div>
    
-  );
+  );*/
   /*
  const defaultLayoutPluginInstance = defaultLayoutPlugin();
   // for onchange event
@@ -120,7 +120,8 @@ const Curriculum = () => {
      </div>
      </div>
  
- ) */
+ ) 
+}*/
 }
  
 export default Curriculum;

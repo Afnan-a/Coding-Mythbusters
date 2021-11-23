@@ -1,10 +1,12 @@
-//import firebase from 'firebase';
-import firebase from "firebase/compat/app"
+import firebase from "firebase/compat/app";
 import "firebase/compat/auth"
-import "firebase/firestore"
-import "firebase/compat/storage"
+import "firebase/compat/firestore"
+//import { initializeApp } from "firebase/app"
+//import "firebase/compat/auth"
+//import "firebase/firestore"
+import { getStorage } from "firebase/storage"
 
-const firebaseConfig = firebase.initializeApp({
+const firebaseConfig = {
     apiKey: "AIzaSyAOjmtKuzkog_KNCUWMQkgvLmg_qWpyjPw",
     authDomain: "ready-set-learn.firebaseapp.com",
     projectId: "ready-set-learn",
@@ -12,12 +14,14 @@ const firebaseConfig = firebase.initializeApp({
     messagingSenderId: "217037053743",
     appId: "1:217037053743:web:6136bee23914259d9dcbda",
     measurementId: "G-W34P05QMK8"
-})
+}; 
+
+const app = firebase.initializeApp(firebaseConfig); 
 
 //firebaseConfig.initializeApp(firebaseConfig);
-const store = firebaseConfig.storage().ref();
-const auth = firebaseConfig.auth();
-const db = firebaseConfig.firestore();
+const storage = getStorage(app); 
+const auth = app.auth();
+const db = app.firestore();
 const googleProvider = new firebase.auth.GoogleAuthProvider();
 const signInWithGoogle = async () => {
   try {
@@ -76,7 +80,7 @@ const logout = () => {
   auth.signOut();
 };
 export {
-  store,
+  storage,
   auth,
   db,
   signInWithGoogle,
