@@ -1,12 +1,15 @@
-import React, {useEffect, useState, useRef } from 'react' 
+/*import React, {useEffect, useState, useRef } from 'react' 
 import { auth, signInWithEmailAndPassword } from "./firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { Form, Button, Card } from 'react-bootstrap'
 import { Link, useHistory } from "react-router-dom";
+import { Redirect, Router } from "react-router";
+//import Home from './screens/home';
 
 
 
 export default function Signin(){
+    const { Signin } = useAuthI(); 
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [name, setName] = useState("");
@@ -14,7 +17,8 @@ export default function Signin(){
     const history = useHistory();
     useEffect(() => {
       if (loading) return;
-      if (user) history.replace("/dashboard");
+      //if (user) history.replace("/dashboard");
+      if (user) return <Redirect to="/home" />;
     }, [user, loading]);
 
 
@@ -39,5 +43,5 @@ export default function Signin(){
         </Card></>
     )
 
-}
+}*/
  

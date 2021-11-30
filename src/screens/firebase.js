@@ -22,7 +22,7 @@ const app = firebase.initializeApp(firebaseConfig);
 const storage = getStorage(app); 
 const auth = app.auth();
 const db = app.firestore();
-const googleProvider = new firebase.auth.GoogleAuthProvider();
+/*const googleProvider = new firebase.auth.GoogleAuthProvider();
 const signInWithGoogle = async () => {
   try {
     const res = await auth.signInWithPopup(googleProvider);
@@ -78,14 +78,14 @@ const sendPasswordResetEmail = async (email) => {
 };
 const logout = () => {
   auth.signOut();
-};
+};*/ 
 export {
   storage,
   auth,
   db,
-  signInWithGoogle,
+  /*signInWithGoogle,
   signInWithEmailAndPassword,
   registerWithEmailAndPassword,
   sendPasswordResetEmail,
-  logout,
+  logout,*/ 
 };
