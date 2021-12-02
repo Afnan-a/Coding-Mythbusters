@@ -62,6 +62,9 @@ return (
 		<NavLink to='/curriculum' activeStyle>
 			Curriculum
         </NavLink>
+		<NavLink to='/login' activeStyle>
+			Log in
+		</NavLink>
 		<img src={Logo} className='Logo' alt="logo"/>
 		</NavMenu>
 

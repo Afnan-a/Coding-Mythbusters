@@ -23,9 +23,15 @@ export const SidebarData = [
         cName: 'nav-text'
     },
     {
+        title: 'Login',
+        path: '/login',
+        icon: <BsIcons.BsDoorOpenFill />,
+        cName: 'nav-text'
+    },
+    {
         title: 'Log Out',
         path: '/log_out',
-        icon: <BsIcons.BsDoorOpenFill />,
+        icon: <BsIcons.BsDoorClosedFill />,
         cName: 'nav-text'
     },
 ]
