@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react';
 //import '@react-pdf-viewer/default-layout/lib/styles/index.css';
 //import { Worker } from '@react-pdf-viewer/core';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import storage from './firebase';
+import { storage } from './firebase';
 
  
 const Curriculum = () => {
@@ -35,7 +35,7 @@ const Curriculum = () => {
     })
   };*/
 
-  return(
+  /*return(
    // <input type="file" onChange={onChange}/> // onchange handler for this input
    <div className="Curriculum" style={{ marginTop:250 }}>
     <center>
@@ -46,7 +46,7 @@ const Curriculum = () => {
     </center>
    </div>
    
-  );
+  );*/
   /*
  const defaultLayoutPluginInstance = defaultLayoutPlugin();
   // for onchange event
@@ -120,7 +120,8 @@ const Curriculum = () => {
      </div>
      </div>
  
- ) */
+ ) 
+}*/
 }
  
 export default Curriculum;
