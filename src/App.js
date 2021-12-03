@@ -1,6 +1,6 @@
-import React from 'react';
-import './App.css';
+import React, { useState, useContext, useEffect} from 'react';
 import Navbar from './components/Navbar';
+import './index.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './screens/home';
 import Lessons from './screens/lessons';

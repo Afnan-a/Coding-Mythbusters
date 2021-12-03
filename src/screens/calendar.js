@@ -1,21 +1,35 @@
-import React from "react";
-import Calendar from "@ericz1803/react-google-calendar";
+import React, { useState, useContext, useEffect} from 'react';
+import "/Users/alyissasanders/Library/Mobile Documents/com~apple~CloudDocs/my-app/Coding-Mythbusters/src/index";
+import { getMonth } from "/Users/alyissasanders/Library/Mobile Documents/com~apple~CloudDocs/my-app/Coding-Mythbusters/src/util";
+import Month from "/Users/alyissasanders/Library/Mobile Documents/com~apple~CloudDocs/my-app/Coding-Mythbusters/src/components/Month";
+import GlobalContext from "/Users/alyissasanders/Library/Mobile Documents/com~apple~CloudDocs/my-app/Coding-Mythbusters/src/context/GlobalContext";
+import EventModal from "/Users/alyissasanders/Library/Mobile Documents/com~apple~CloudDocs/my-app/Coding-Mythbusters/src/components/EventModal";
+import Sidebar from "/Users/alyissasanders/Library/Mobile Documents/com~apple~CloudDocs/my-app/Coding-Mythbusters/src/components/Sidebar";
+import CalendarHeader from "/Users/alyissasanders/Library/Mobile Documents/com~apple~CloudDocs/my-app/Coding-Mythbusters/src/components/CalendarHeader";
 
-const API_KEY = "AIzaSyCdHNRkr_QK6ygtZlKS8tPk9ytMRrxkykE";
-let calendars = [
-  {calendarId: "8jm76932d028s5p2jnrinj50q0@group.calendar.google.com"},
-  {
-    calendarId: "8jm76932d028s5p2jnrinj50q0@group.calendar.google.com",
-    color: "#B241D1" //optional, specify color of calendar 2 events 
-  }
-];
 
-function calendar() {
+function Calendar() {
+  const [currenMonth, setCurrentMonth] = useState(getMonth());
+  const { monthIndex, showEventModal } = useContext(GlobalContext);
+
+  useEffect(() => {
+    setCurrentMonth(getMonth(monthIndex));
+  }, [monthIndex]);
+
 
   return (
-    <div style={{ marginRight:80 }}>
-      <Calendar apiKey={API_KEY} calendars={calendars} />
-    </div>
+    <React.Fragment>
+      {showEventModal && <EventModal />}
+
+      <div className="h-screen flex flex-col">
+       <CalendarHeader />
+        <div className="flex flex-1">
+          <Sidebar />
+          <Month month={currenMonth} />
+        </div>
+      </div>
+    </React.Fragment>
   );
 }
-export default calendar
+
+export default Calendar;
