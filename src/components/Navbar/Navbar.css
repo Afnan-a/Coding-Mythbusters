@@ -33,6 +33,7 @@
 .nav-text {
     display: flex;
     justify-content: start;
+    margin-left: -32px; /* Alligns text with X */
     align-items: center;
     padding: 8px 0px 8px 16px;
     list-style: none;

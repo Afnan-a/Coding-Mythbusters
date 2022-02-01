@@ -22,12 +22,12 @@ export const SidebarData = [
         icon: <AiIcons.AiFillSetting />,
         cName: 'nav-text'
     },
-    {
+    /*{
         title: 'Login',
         path: '/login',
         icon: <BsIcons.BsDoorOpenFill />,
         cName: 'nav-text'
-    },
+    },*/
     {
         title: 'Log Out',
         path: '/log_out',

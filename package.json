@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@angular/fire": "^7.0.4",
+    "@babel/plugin-syntax-jsx": "^7.16.7",
     "@craco/craco": "^5.9.0",
     "@emotion/react": "^11.5.0",
     "@ericz1803/react-google-calendar": "^4.2.1",
@@ -58,7 +59,14 @@
     ]
   },
   "devDependencies": {
+    "@babel/core": "^7.11.4",
+    "@babel/plugin-proposal-class-properties": "^7.16.7",
+    "@babel/plugin-transform-react-jsx": "^7.10.4",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-react": "^7.16.7",
     "autoprefixer": "^9.8.8",
+    "babel-loader": "^8.1.0",
+    "html-webpack-plugin": "^5.5.0",
     "postcss": "^7.0.39",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17"
   }
