@@ -4,7 +4,6 @@ import './index.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './screens/home';
 import Lessons from './screens/lessons';
-import Calendar from './screens/calendar';
 import Curriculum from './screens/curriculum';
 import Login from './screens/login'
 import Settings from './screens/settings';
@@ -22,7 +21,6 @@ return (
 			<Switch>
 				<PrivateRoute path='/' exact component={Home} />
 				<Route path='/lessons' component={Lessons} />
-				<Route path='/calendar' component={Calendar} />
 				<Route path='/curriculum' component={Curriculum} />
 				<Route path='/settings' component={Settings} />
 				<Route path='/people' component={People} />
